@@ -1,0 +1,14 @@
+Objects/
+Listings/
+*.uvguix.*
+*.bak
+*.o
+*.d
+*.crf
+*.axf
+*.htm
+*.lnp
+*.dep
+*.map
+*.hex
+*.build_log.htm

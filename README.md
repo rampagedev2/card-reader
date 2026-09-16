@@ -50,4 +50,4 @@ Buy: https://www.chinaenclosure.com/products/SZOMK-Custom-IP54-abs-plastic-junct
 2. Import netlist / redraw in KiCad from `schematic/` sheets  
 3. Fabricate PCB per `pcb/design-rules.md` (JLCPCB recommended)  
 4. Print enclosure prototype from `enclosure/card_reader_case.scad`  
-5. Flash firmware with SWD (PA13/PA14)
+5. Open `firmware/KEIL/CardReader.uvprojx` (ARMCC5, no HAL) — build & flash SWD  

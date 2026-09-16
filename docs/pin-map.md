@@ -29,16 +29,18 @@ Package: LQFP-100. RFID via **RC522 module** (not discrete chip).
 | 72 | PA13 | SWDIO |
 | 76 | PA14 | SWCLK |
 
-## SPI1 → RC522 module (J3)
+## SPI0 (GD32) / SPI1 (STM alias) → RC522 module (J3)
+
+PA4–PA7 AF5 = **SPI0** on GD32F407 (same pins as STM32 “SPI1”).
 
 | MCU pin | Net | Module pin (typical) |
 |---------|-----|----------------------|
 | 3V3 | 3V3 | 3.3V |
 | GND | GND | GND |
-| PA5 | SPI1_SCK | SCK |
-| PA6 | SPI1_MISO | MISO |
-| PA7 | SPI1_MOSI | MOSI |
-| PA4 | SPI1_NSS | SDA |
+| PA5 | SPI0_SCK | SCK |
+| PA6 | SPI0_MISO | MISO |
+| PA7 | SPI0_MOSI | MOSI |
+| PA4 | SPI0_NSS | SDA |
 | PC4 | RFID_RST | RST |
 | PC5 | RFID_IRQ | IRQ (optional) |
 

@@ -1,0 +1,13 @@
+; KEIL scatter — GD32F407VET6 512KB Flash / 192KB SRAM
+; Legacy ARMCC5 compatible
+
+LR_IROM1 0x08000000 0x00080000 {
+  ER_IROM1 0x08000000 0x00080000 {
+    *.o (RESET, +First)
+    *(InRoot$$Sections)
+    .ANY (+RO)
+  }
+  RW_IRAM1 0x20000000 0x00030000 {
+    .ANY (+RW +ZI)
+  }
+}
