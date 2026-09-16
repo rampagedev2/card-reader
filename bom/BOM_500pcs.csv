@@ -1,34 +1,35 @@
-Ref,Qty,Value,Package,Manufacturer,LCSC_MPN,Unit_USD_500,Ext_USD_500,Category,Buy_URL,Notes
-U1,1,GD32F407VET6,LQFP-100,GigaDevice,C108421,2.90,2.90,MCU,https://www.lcsc.com/product-detail/C108421.html,Hand solder LQFP needs hot air or stencil
-MOD1,1,RC522 RFID module,40x60 module,generic,n/a,0.55,0.55,RFID,https://www.alibaba.com/product-detail/Verified-Supplier-MFRC-522-RC-522_1601798247615.html,SPI module with antenna onboard
-J3,1,Header 1x8 2.54 female,Pin header,generic,C124411,0.05,0.05,Connector,https://www.lcsc.com/product-detail/C124411.html,RC522 socket or solder wires
-U4,1,AP2112K-3.3TRG1,SOT-23-5,BCI/Diodes,C51118,0.08,0.08,Power,https://www.lcsc.com/product-detail/C51118.html,3.3V LDO
-U5,1,USBLC6-2SC6,SOT-23-6,ST/compat,C2827693,0.12,0.12,ESD,https://www.lcsc.com/product-detail/C2827693.html,USB ESD
-Q1,1,AO3400,SOT-23,AOS/compat,C20917,0.03,0.03,Discrete,https://www.lcsc.com/product-detail/C20917.html,Buzzer MOSFET
-X1,1,8MHz 20ppm,SMD3225,generic,C9002,0.05,0.05,Clock,https://www.lcsc.com/product-detail/C9002.html,HSE crystal
-BZ1,1,Passive piezo 12mm,TH,generic,C96590,0.15,0.15,Audio,https://www.lcsc.com/product-detail/C96590.html,Easy hand solder TH
-J1,1,USB-C 16P SMD,TYPE-C,generic,C165948,0.18,0.18,Connector,https://www.lcsc.com/product-detail/C165948.html,USB-C receptacle
-J2,1,SWD 1x4 2.54,Pin header,generic,C124378,0.05,0.05,Debug,https://www.lcsc.com/product-detail/C124378.html,Programming header
-LED1,1,Green 0603,LED-0603,generic,C2286,0.02,0.02,Opto,https://www.lcsc.com/product-detail/C2286.html,Status LED
-LED2,1,Blue 0603,LED-0603,generic,C2287,0.02,0.02,Opto,https://www.lcsc.com/product-detail/C2287.html,RF LED
-D1,1,1N4148W,SOD-123,generic,C2128,0.01,0.01,Discrete,https://www.lcsc.com/product-detail/C2128.html,Buzzer diode
-L1,1,Ferrite 600R@100MHz,0603,generic,C107148,0.02,0.02,EMI,https://www.lcsc.com/product-detail/C107148.html,USB VBUS ferrite
-C_BULK,4,10uF 16V X5R,0805,generic,C15850,0.03,0.12,Passive,https://www.lcsc.com/product-detail/C15850.html,Bulk caps
-C_DEC,16,100nF 50V X7R,0402,generic,C1525,0.005,0.08,Passive,https://www.lcsc.com/product-detail/C1525.html,Decoupling
-C_XTAL,2,22pF NP0,0402,generic,C1555,0.01,0.02,Passive,https://www.lcsc.com/product-detail/C1555.html,Crystal load
-R_CC,2,5.1k 1%,0402,generic,C25905,0.005,0.01,Passive,https://www.lcsc.com/product-detail/C25905.html,USB-C CC resistors
-R_LED,2,1k 5%,0402,generic,C11702,0.004,0.008,Passive,https://www.lcsc.com/product-detail/C11702.html,LED series
-R_BOOT,1,10k 5%,0402,generic,C25744,0.004,0.004,Passive,https://www.lcsc.com/product-detail/C25744.html,BOOT0 pull-down
-R_RST,1,10k 5%,0402,generic,C25744,0.004,0.004,Passive,https://www.lcsc.com/product-detail/C25744.html,NRST pull-up
-R_BUZ,1,100R 5%,0402,generic,C25076,0.004,0.004,Passive,https://www.lcsc.com/product-detail/C25076.html,Gate series
-MISC_PASS,1,Extra 0402 kit,0402,generic,C70098,0.25,0.25,Passive,https://www.lcsc.com/product-detail/C70098.html,Assorted R/C kit if preferred
-PCB1,1,Bare PCB 2-layer,FR-4,JLCPCB,n/a,0.30,0.30,Fab,https://jlcpcb.com/,Smaller board - no onboard antenna
-,,,,,,,PARTS_SUBTOTAL,,6.60,6.60,,RC522 module; hand assemble; no factory SMT
-ENC1,1,SZOMK AK-R-160 selected China,118x75x22 ABS,SZOMK,AK-R-160,1.20,1.20,Mech,https://www.chinaenclosure.com/products/SZOMK-Custom-IP54-abs-plastic-junction-box-RFID-enclosure-for-Card-reader-AK-R-160-118-75-22mm.html,No battery; CNC card+LED+Type-C
-ENC_CNC,1,Card recess + Type-C + 2x LED CNC,Labor,SZOMK,n/a,0.50,0.50,Mech,https://szokm.en.alibaba.com/,Ask with 500 quote
-ENC_ALT,0,SZOMK AK-R-55 larger alt,154x110x35,SZOMK,AK-R-55,1.50,0.00,Mech,https://szomkbox.en.made-in-china.com/product/pvYQDhkWTxAn/China-Szomk-Card-Reader-Housing-for-Electronics-RFID-Project-Box.html,Roomier alt; qty0
-SCREW,1,Included with enclosure,Steel,SZOMK,n/a,0.00,0.00,Mech,n/a,Comes with kit
-,,,,,,,UNIT_TOTAL_EST,,8.30,8.30,,Parts+PCB+AK-R-160; Ops excluded
-,,,,,,,BATCH_500_TOTAL,,4150,4150,,
-,,,,,,,MOLD_NRE,,0,0,,Not purchased
-,,,,,,,FACTORY_SMT,,0,0,,Manual manufacture - not ordered
+Ref,Qty,Value,Package,Manufacturer,LCSC_MPN,Unit_USD_1,Ext_USD_1,Unit_USD_500,Ext_USD_500,Category,Buy_URL,Notes
+U1,1,GD32F407VET6,LQFP-100,GigaDevice,C108421,4.31,4.31,2.90,2.90,MCU,https://www.lcsc.com/product-detail/C108421.html,LCSC 1+ $4.31; 540+ ~$3.05; Hand solder LQFP
+MOD1,1,RC522 RFID module,40x60 module,generic,n/a,1.20,1.20,0.55,0.55,RFID,https://www.alibaba.com/product-detail/Verified-Supplier-MFRC-522-RC-522_1601798247615.html,Sample ~$1.20; volume ~$0.55; SPI+antenna
+J3,1,Header 1x8 2.54 female,Pin header,generic,C124411,0.10,0.10,0.05,0.05,Connector,https://www.lcsc.com/product-detail/C124411.html,RC522 socket or solder wires
+U4,1,AP2112K-3.3TRG1,SOT-23-5,BCI/Diodes,C51118,0.18,0.18,0.08,0.08,Power,https://www.lcsc.com/product-detail/C51118.html,LCSC MOQ 5 @ ~$0.18; 500+ ~$0.11
+U5,1,USBLC6-2SC6,SOT-23-6,ST/compat,C2827693,0.28,0.28,0.12,0.12,ESD,https://www.lcsc.com/product-detail/C2827693.html,USB ESD
+Q1,1,AO3400,SOT-23,AOS/compat,C20917,0.08,0.08,0.03,0.03,Discrete,https://www.lcsc.com/product-detail/C20917.html,Buzzer MOSFET
+X1,1,8MHz 20ppm,SMD3225,generic,C9002,0.12,0.12,0.05,0.05,Clock,https://www.lcsc.com/product-detail/C9002.html,HSE crystal
+BZ1,1,Passive piezo 12mm,TH,generic,C96590,0.35,0.35,0.15,0.15,Audio,https://www.lcsc.com/product-detail/C96590.html,Easy hand solder TH
+J1,1,USB-C 16P SMD,TYPE-C,generic,C165948,0.19,0.19,0.18,0.18,Connector,https://www.lcsc.com/product-detail/C165948.html,LCSC MOQ 5 @ ~$0.19
+J2,1,SWD 1x4 2.54,Pin header,generic,C124378,0.10,0.10,0.05,0.05,Debug,https://www.lcsc.com/product-detail/C124378.html,Programming header
+LED1,1,Green 0603,LED-0603,generic,C2286,0.03,0.03,0.02,0.02,Opto,https://www.lcsc.com/product-detail/C2286.html,Status LED
+LED2,1,Blue 0603,LED-0603,generic,C2287,0.03,0.03,0.02,0.02,Opto,https://www.lcsc.com/product-detail/C2287.html,RF LED
+D1,1,1N4148W,SOD-123,generic,C2128,0.03,0.03,0.01,0.01,Discrete,https://www.lcsc.com/product-detail/C2128.html,Buzzer diode
+L1,1,Ferrite 600R@100MHz,0603,generic,C107148,0.05,0.05,0.02,0.02,EMI,https://www.lcsc.com/product-detail/C107148.html,USB VBUS ferrite
+C_BULK,4,10uF 16V X5R,0805,generic,C15850,0.06,0.24,0.03,0.12,Passive,https://www.lcsc.com/product-detail/C15850.html,Bulk caps
+C_DEC,16,100nF 50V X7R,0402,generic,C1525,0.01,0.16,0.005,0.08,Passive,https://www.lcsc.com/product-detail/C1525.html,Decoupling
+C_XTAL,2,22pF NP0,0402,generic,C1555,0.02,0.04,0.01,0.02,Passive,https://www.lcsc.com/product-detail/C1555.html,Crystal load
+R_CC,2,5.1k 1%,0402,generic,C25905,0.01,0.02,0.005,0.01,Passive,https://www.lcsc.com/product-detail/C25905.html,USB-C CC resistors
+R_LED,2,1k 5%,0402,generic,C11702,0.01,0.02,0.004,0.008,Passive,https://www.lcsc.com/product-detail/C11702.html,LED series
+R_BOOT,1,10k 5%,0402,generic,C25744,0.01,0.01,0.004,0.004,Passive,https://www.lcsc.com/product-detail/C25744.html,BOOT0 pull-down
+R_RST,1,10k 5%,0402,generic,C25744,0.01,0.01,0.004,0.004,Passive,https://www.lcsc.com/product-detail/C25744.html,NRST pull-up
+R_BUZ,1,100R 5%,0402,generic,C25076,0.01,0.01,0.004,0.004,Passive,https://www.lcsc.com/product-detail/C25076.html,Gate series
+MISC_PASS,1,Extra 0402 kit,0402,generic,C70098,0.40,0.40,0.25,0.25,Passive,https://www.lcsc.com/product-detail/C70098.html,Assorted R/C kit if preferred
+PCB1,1,Bare PCB 2-layer,FR-4,JLCPCB,n/a,0.40,0.40,0.30,0.30,Fab,https://jlcpcb.com/,Buy-1 = $2/5pcs promo (~$0.40 ea); 500 ~$0.30
+,,,,,,,PARTS_SUBTOTAL,,8.36,8.36,6.60,6.60,,RC522 module; hand assemble; no factory SMT
+ENC1,1,SZOMK AK-R-160 selected China,118x75x22 ABS,SZOMK,AK-R-160,3.50,3.50,1.20,1.20,Mech,https://www.chinaenclosure.com/products/SZOMK-Custom-IP54-abs-plastic-junction-box-RFID-enclosure-for-Card-reader-AK-R-160-118-75-22mm.html,Sample ~$3.50; volume ~$1.20
+ENC_CNC,1,Card recess + Type-C + 2x LED CNC,Labor,SZOMK,n/a,2.50,2.50,0.50,0.50,Mech,https://szokm.en.alibaba.com/,Sample CNC higher; ask with quote
+ENC_ALT,0,SZOMK AK-R-55 larger alt,154x110x35,SZOMK,AK-R-55,4.00,0.00,1.50,0.00,Mech,https://szomkbox.en.made-in-china.com/product/pvYQDhkWTxAn/China-Szomk-Card-Reader-Housing-for-Electronics-RFID-Project-Box.html,Roomier alt; qty0
+SCREW,1,Included with enclosure,Steel,SZOMK,n/a,0.00,0.00,0.00,0.00,Mech,n/a,Comes with kit
+,,,,,,,UNIT_TOTAL_EST,,14.36,14.36,8.30,8.30,,Parts+PCB+AK-R-160; Ops excluded
+,,,,,,,BATCH_1_TOTAL,,14.36,14.36,,,One device at sample/MOQ prices
+,,,,,,,BATCH_500_TOTAL,,,,4150,4150,,
+,,,,,,,MOLD_NRE,,0,0,0,0,,Not purchased
+,,,,,,,FACTORY_SMT,,0,0,0,0,,Manual manufacture - not ordered

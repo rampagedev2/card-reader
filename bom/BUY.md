@@ -84,8 +84,10 @@ Module pins (typical): **3.3V, RST, GND, IRQ, MISO, MOSI, SCK, SDA(NSS)** — 3.
 
 ## Cost (hardware only)
 
-| | Per device | 500 pcs |
-|--|------------|---------|
-| Parts + bare PCB | ~$6.60 | ~$3,300 |
-| AK-R-160 + CNC | ~$1.70 | ~$850 |
-| **Total** | **~$8.30** | **~$4,150** |
+| | Buy 1 | Buy 500 (per device) | 500 batch |
+|--|-------|----------------------|-----------|
+| Parts + bare PCB | ~$8.36 | ~$6.60 | ~$3,300 |
+| AK-R-160 + CNC | ~$6.00 | ~$1.70 | ~$850 |
+| **Total** | **~$14.36** | **~$8.30** | **~$4,150** |
+
+Buy-1 uses LCSC/Alibaba sample or MOQ prices (see `Unit_USD_1` / `Ext_USD_1` in `BOM_500pcs.csv`).
