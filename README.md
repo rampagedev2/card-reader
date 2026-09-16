@@ -1,18 +1,18 @@
 # Card Reader — GD32F407VET6 + RC522
 
-Desktop USB card reader with RFID (13.56 MHz), buzzer feedback, USB Mass Storage, and software ECC.
+Desktop USB card reader: user **places the card on top**; RFID (RC522 module), buzzer, USB Mass Storage, ECC.
 
 | Item | Spec |
 |------|------|
 | MCU | GigaDevice **GD32F407VET6** (Cortex-M4 @ 168 MHz, LQFP-100) |
-| RFID | **MFRC522** (RC522 circuit) on-board antenna |
+| RFID | **RC522 ready module** (SPI via header J3) |
 | Storage | **Custom USB MSC** (MCU internal Flash / virtual disk — no SPI NOR) |
 | USB | USB-C (device FS), customized Mass Storage Class |
 | Audio | Passive piezo buzzer |
 | Crypto | Software ECC (secp256r1) on Cortex-M4 FPU |
 | Power | USB 5 V → 3.3 V LDO |
 | PCB | 70 × 90 mm, 2-layer FR-4 |
-| Enclosure | **Stock blank ABS** RFID shell (e.g. LK-AC05 119×77×22) — no mold, no logo |
+| Enclosure | **SZOMK AK-R-55** (154×110×35) — list $1.50; CNC card + LED + Type-C |
 
 ## Features
 
@@ -38,12 +38,11 @@ See the interactive cost canvas and `bom/BOM_500pcs.csv`.
 
 | Category | Per unit | 500 batch |
 |----------|----------|-----------|
-| Electronics + PCBA | ~$8.00 | ~$4,000 |
-| Stock blank enclosure | ~$1.75 | ~$875 |
-| Test / pack / scrap | ~$1.20 | ~$600 |
-| **Total landed factory** | **~$10.95** | **~$5,475** |
+| Electronics (parts + bare PCB) | ~$6.60 | ~$3,300 |
+| AK-R-55 + CNC (est @500) | ~$1.80 | ~$900 |
+| **Total (hand build hardware)** | **~$8.40** | **~$4,200** |
 
-Prices are LCSC / Alibaba / JLCPCB-class estimates (USD, Sep 2026). Re-quote before ordering.
+Buy: https://szomkbox.en.made-in-china.com/product/pvYQDhkWTxAn/China-Szomk-Card-Reader-Housing-for-Electronics-RFID-Project-Box.html — Ops excluded.
 
 ## Quick start (hardware)
 
