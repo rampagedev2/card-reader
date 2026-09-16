@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
-  <rect width="1000" height="720" fill="#f4f2ed"/>
-  <text x="40" y="40" font-family="Georgia, serif" font-size="22" fill="#1a1a1a">Enclosure - Stock blank (no mold)</text>
-  <text x="40" y="65" font-family="Segoe UI, sans-serif" font-size="12" fill="#666">Recommended: Shiny LK-AC05 | 119 x 77 x 22 mm | ABS black | no logo</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="780" viewBox="0 0 1000 780">
+  <rect width="1000" height="780" fill="#f4f2ed"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="22" fill="#1a1a1a">Enclosure - Place card on top</text>
+  <text x="40" y="65" font-family="Segoe UI, sans-serif" font-size="12" fill="#666">User lays card on lid recess | RC522 under lid | Type-C on edge</text>
 
-  <g transform="translate(80,120)">
-    <rect x="0" y="0" width="300" height="195" rx="10" fill="#2a2c2e" stroke="#111" stroke-width="2"/>
-    <rect x="40" y="40" width="220" height="120" rx="4" fill="#323538"/>
-    <text x="150" y="105" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#9aa">TAP ZONE</text>
-    <circle cx="50" cy="25" r="4" fill="#3d7a55"/>
-    <circle cx="70" cy="25" r="4" fill="#3a6a9a"/>
-    <text x="150" y="185" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#888">TOP ~119 x 77 mm</text>
+  <!-- Top view -->
+  <g transform="translate(70,100)">
+    <rect x="0" y="0" width="340" height="228" rx="28" fill="#2a2c2e" stroke="#111" stroke-width="2"/>
+    <!-- card recess -->
+    <rect x="28" y="28" width="284" height="172" rx="12" fill="#1f2123" stroke="#6a6e72" stroke-width="2"/>
+    <rect x="40" y="42" width="260" height="144" rx="10" fill="none" stroke="#8a9096" stroke-dasharray="6 4"/>
+    <text x="170" y="110" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#b0b6bc">PLACE CARD HERE</text>
+    <text x="170" y="132" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#8a9096">86 x 54 recess on top</text>
+    <circle cx="52" cy="20" r="4" fill="#3d7a55"/>
+    <circle cx="70" cy="20" r="4" fill="#3a6a9a"/>
+    <text x="170" y="215" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#888">TOP VIEW</text>
   </g>
 
-  <g transform="translate(450,150)">
-    <rect x="0" y="40" width="300" height="55" rx="8" fill="#2a2c2e" stroke="#111" stroke-width="2"/>
-    <rect x="290" y="55" width="12" height="18" rx="2" fill="#111"/>
-    <text x="150" y="130" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#888">SIDE ~22 mm | USB-C cutout</text>
+  <!-- Side with Type-C -->
+  <g transform="translate(460,130)">
+    <rect x="0" y="40" width="340" height="100" rx="22" fill="#2a2c2e" stroke="#111" stroke-width="2"/>
+    <!-- recess notch on top surface -->
+    <path d="M40 40 L40 52 L300 52 L300 40" fill="none" stroke="#6a6e72" stroke-width="2"/>
+    <text x="170" y="30" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">recess 0.8 mm</text>
+    <!-- Type-C -->
+    <rect x="318" y="72" width="16" height="28" rx="4" fill="#111" stroke="#ccc"/>
+    <text x="170" y="170" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#888">SIDE | USB Type-C 9.0 x 3.5 mm</text>
   </g>
 
-  <g transform="translate(80,380)" font-family="Segoe UI, sans-serif" font-size="13" fill="#333">
-    <text x="0" y="0" font-family="Georgia, serif" font-size="16">Market buy (blank)</text>
-    <text x="0" y="30">- Shiny Enclosure LK-AC05 (or LK-AC03 / Hongfa HF series)</text>
-    <text x="0" y="55">- Order: blank ABS, no logo, with screws</text>
-    <text x="0" y="80">- ~$1.40 shell + ~$0.25 USB/LED machining @ qty 500</text>
-    <text x="0" y="105">- Mold NRE: $0 | Lead time: days, not weeks</text>
-    <text x="0" y="140" fill="#555">Resize PCB to match supplier CAD (target ~65 x 85 mm)</text>
+  <!-- USB edge front -->
+  <g transform="translate(460,340)">
+    <rect x="40" y="0" width="220" height="70" rx="18" fill="#2a2c2e" stroke="#111" stroke-width="2"/>
+    <rect x="120" y="24" width="60" height="22" rx="5" fill="#111" stroke="#aaa"/>
+    <text x="150" y="39" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#888">Type-C</text>
+    <text x="150" y="100" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#888">USB EDGE (short side)</text>
+  </g>
+
+  <g transform="translate(70,400)" font-family="Segoe UI, sans-serif" font-size="13" fill="#333">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="16">Machining summary</text>
+    <text x="0" y="32">1. User places card flat on top recess (not a side slot)</text>
+    <text x="0" y="58">2. Short edge: USB Type-C for PC connection</text>
+    <text x="0" y="84">3. RC522 under lid, antenna facing up toward the card</text>
+    <text x="0" y="110">4. CNC recess + Type-C on blank Anbox (machining-notes.md)</text>
   </g>
 </svg>

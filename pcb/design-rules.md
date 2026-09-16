@@ -4,7 +4,7 @@
 
 | Parameter | Value |
 |-----------|-------|
-| Size | **70 × 90 mm** |
+| Size | **105 × 60 mm** (fit SZOMK AK-R-160 118×75×22; confirm CAD) |
 | Layers | **2** (Top signal+RF, Bottom GND+signal) |
 | Thickness | 1.6 mm FR-4 |
 | Copper | 1 oz (35 µm) |
@@ -27,18 +27,16 @@ BOTTOM: Solid GND pour, few jumpers, SWD pads
 ## Floorplan (see `pcb_layout.svg`)
 
 ```
-Y=90 ┌──────────────────────────────────────┐
+Y=60 ┌──────────────────────────────────────┐
      │  [USB-C]    LDO    ESD               │  short edge = cable side
      │           [GD32F407 LQFP100]         │
-     │  Flash                               │
      │  Buzzer  LEDs                        │
-     │ ───────────────────────────────────  │  RF keep-out boundary
+     │  J3 header ---- RC522 MODULE (top)   │  module under lid
      │                                      │
-     │         ANTENNA 40×40                │  under lid RF window
-     │         MFRC522 nearby               │
 Y=0  └──────────────────────────────────────┘
-   X=0                                   X=70
+   X=0                                  X=105
 ```
+Fit: SZOMK **AK-R-160** (118×75×22). No onboard antenna — module antenna faces lid.
 
 ## Critical constraints
 

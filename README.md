@@ -11,8 +11,8 @@ Desktop USB card reader: user **places the card on top**; RFID (RC522 module), b
 | Audio | Passive piezo buzzer |
 | Crypto | Software ECC (secp256r1) on Cortex-M4 FPU |
 | Power | USB 5 V → 3.3 V LDO |
-| PCB | 70 × 90 mm, 2-layer FR-4 |
-| Enclosure | **SZOMK AK-R-55** (154×110×35) — list $1.50; CNC card + LED + Type-C |
+| PCB | Fit AK-R-160 (~110 × 65 mm max), 2-layer FR-4 |
+| Enclosure | **SZOMK AK-R-160** (118×75×22) — CNC card recess + LED + Type-C |
 
 ## Features
 
@@ -39,10 +39,10 @@ See the interactive cost canvas and `bom/BOM_500pcs.csv`.
 | Category | Per unit | 500 batch |
 |----------|----------|-----------|
 | Electronics (parts + bare PCB) | ~$6.60 | ~$3,300 |
-| AK-R-55 + CNC (est @500) | ~$1.80 | ~$900 |
-| **Total (hand build hardware)** | **~$8.40** | **~$4,200** |
+| AK-R-160 + CNC | ~$1.70 | ~$850 |
+| **Total (hand build hardware)** | **~$8.30** | **~$4,150** |
 
-Buy: https://szomkbox.en.made-in-china.com/product/pvYQDhkWTxAn/China-Szomk-Card-Reader-Housing-for-Electronics-RFID-Project-Box.html — Ops excluded.
+Buy: https://www.chinaenclosure.com/products/SZOMK-Custom-IP54-abs-plastic-junction-box-RFID-enclosure-for-Card-reader-AK-R-160-118-75-22mm.html — Ops excluded.
 
 ## Quick start (hardware)
 

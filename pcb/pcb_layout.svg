@@ -1,64 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
-  <rect width="900" height="1100" fill="#1e1e1e"/>
-  <text x="40" y="40" font-family="Georgia, serif" font-size="20" fill="#e8e4dc">PCB Layout - Top View (scale ~8:1 mm)</text>
-  <text x="40" y="65" font-family="Segoe UI, sans-serif" font-size="12" fill="#999">70 x 90 mm | 2-layer | Rev A</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000">
+  <rect width="900" height="1000" fill="#1e1e1e"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="20" fill="#e8e4dc">PCB Layout - Top View (RC522 module)</text>
+  <text x="40" y="65" font-family="Segoe UI, sans-serif" font-size="12" fill="#999">~105 x 60 mm | 2-layer | fit AK-R-160 | module on header J3 | Rev G</text>
 
-  <g transform="translate(120,100)">
-    <rect x="0" y="0" width="560" height="720" fill="#0d3d2a" stroke="#7dcea0" stroke-width="3"/>
+  <g transform="translate(140,100)">
+    <rect x="0" y="0" width="480" height="560" fill="#0d3d2a" stroke="#7dcea0" stroke-width="3"/>
+    <circle cx="28" cy="28" r="10" fill="#1e1e1e" stroke="#aaa"/>
+    <circle cx="452" cy="28" r="10" fill="#1e1e1e" stroke="#aaa"/>
+    <circle cx="28" cy="532" r="10" fill="#1e1e1e" stroke="#aaa"/>
+    <circle cx="452" cy="532" r="10" fill="#1e1e1e" stroke="#aaa"/>
 
-    <circle cx="32" cy="32" r="12" fill="#1e1e1e" stroke="#aaa"/>
-    <circle cx="528" cy="32" r="12" fill="#1e1e1e" stroke="#aaa"/>
-    <circle cx="32" cy="688" r="12" fill="#1e1e1e" stroke="#aaa"/>
-    <circle cx="528" cy="688" r="12" fill="#1e1e1e" stroke="#aaa"/>
+    <rect x="160" y="8" width="160" height="36" rx="4" fill="#333" stroke="#ccc"/>
+    <text x="240" y="32" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#eee">USB-C</text>
 
-    <rect x="200" y="8" width="160" height="40" rx="4" fill="#333" stroke="#ccc"/>
-    <text x="280" y="34" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#eee">USB-C</text>
+    <rect x="40" y="60" width="60" height="36" fill="#4a3728" stroke="#c4a484"/>
+    <text x="70" y="83" text-anchor="middle" font-size="10" fill="#eee" font-family="Segoe UI, sans-serif">ESD</text>
+    <rect x="120" y="60" width="60" height="36" fill="#4a3728" stroke="#c4a484"/>
+    <text x="150" y="83" text-anchor="middle" font-size="10" fill="#eee" font-family="Segoe UI, sans-serif">LDO</text>
 
-    <rect x="40" y="60" width="70" height="40" fill="#4a3728" stroke="#c4a484"/>
-    <text x="75" y="85" text-anchor="middle" font-size="10" fill="#eee" font-family="Segoe UI, sans-serif">ESD</text>
-    <rect x="130" y="60" width="70" height="40" fill="#4a3728" stroke="#c4a484"/>
-    <text x="165" y="85" text-anchor="middle" font-size="10" fill="#eee" font-family="Segoe UI, sans-serif">LDO</text>
+    <rect x="120" y="130" width="220" height="200" fill="#1a2a40" stroke="#7aa2d4" stroke-width="2"/>
+    <text x="230" y="220" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#b8d4f0">GD32F407</text>
+    <text x="230" y="245" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#8899aa">LQFP-100</text>
 
-    <rect x="160" y="130" width="240" height="240" fill="#1a2a40" stroke="#7aa2d4" stroke-width="2"/>
-    <text x="280" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#b8d4f0">GD32F407</text>
-    <text x="280" y="265" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#8899aa">LQFP-100</text>
+    <rect x="40" y="180" width="60" height="36" fill="#333" stroke="#888"/>
+    <text x="70" y="203" text-anchor="middle" font-size="10" fill="#ddd" font-family="Segoe UI, sans-serif">8MHz</text>
 
-    <rect x="60" y="180" width="70" height="40" fill="#333" stroke="#888"/>
-    <text x="95" y="205" text-anchor="middle" font-size="10" fill="#ddd" font-family="Segoe UI, sans-serif">8MHz</text>
+    <circle cx="400" cy="200" r="24" fill="#3a3020" stroke="#c4a050"/>
+    <text x="400" y="205" text-anchor="middle" font-size="10" fill="#eeddcc" font-family="Segoe UI, sans-serif">BZ</text>
+    <circle cx="360" cy="260" r="8" fill="#2d5a3a" stroke="#66dd66"/>
+    <circle cx="390" cy="260" r="8" fill="#1a3a5a" stroke="#66aaff"/>
 
-    <rect x="430" y="150" width="90" height="50" fill="#1a3040" stroke="#66aabb" stroke-dasharray="4 3"/>
-    <text x="475" y="172" text-anchor="middle" font-size="10" fill="#8899aa" font-family="Segoe UI, sans-serif">no NOR</text>
-    <text x="475" y="188" text-anchor="middle" font-size="9" fill="#667788" font-family="Segoe UI, sans-serif">custom MSC</text>
-
-    <circle cx="470" cy="280" r="28" fill="#3a3020" stroke="#c4a050"/>
-    <text x="470" y="285" text-anchor="middle" font-size="10" fill="#eeddcc" font-family="Segoe UI, sans-serif">BZ</text>
-    <circle cx="420" cy="340" r="10" fill="#2d5a3a" stroke="#66dd66"/>
-    <circle cx="450" cy="340" r="10" fill="#1a3a5a" stroke="#66aaff"/>
-    <text x="435" y="370" text-anchor="middle" font-size="10" fill="#aaa" font-family="Segoe UI, sans-serif">LEDs</text>
-
-    <rect x="80" y="420" width="400" height="260" fill="none" stroke="#e07070" stroke-width="2" stroke-dasharray="8 6"/>
-    <text x="280" y="450" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#e07070">RF KEEP-OUT (no copper pour)</text>
-
-    <rect x="140" y="470" width="280" height="180" fill="none" stroke="#f0a0a0" stroke-width="4"/>
-    <rect x="165" y="495" width="230" height="130" fill="none" stroke="#f0a0a0" stroke-width="4"/>
-    <rect x="190" y="520" width="180" height="80" fill="none" stroke="#f0a0a0" stroke-width="4"/>
-    <text x="280" y="575" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#f0c0c0">ANTENNA</text>
-
-    <rect x="40" y="500" width="70" height="70" fill="#401a2a" stroke="#e080a0"/>
-    <text x="75" y="535" text-anchor="middle" font-size="10" fill="#ffccdd" font-family="Segoe UI, sans-serif">RC522</text>
-    <text x="75" y="550" text-anchor="middle" font-size="9" fill="#cc99aa" font-family="Segoe UI, sans-serif">chip</text>
+    <rect x="80" y="380" width="320" height="140" fill="#401a2a" stroke="#e080a0" stroke-width="2"/>
+    <text x="240" y="430" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#fcd">RC522 MODULE</text>
+    <text x="240" y="455" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#c9a">plugs into J3 header</text>
+    <text x="240" y="480" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#c9a">antenna on module</text>
   </g>
 
-  <g transform="translate(120,860)" font-family="Segoe UI, sans-serif" fill="#ccc" font-size="13">
-    <text x="0" y="0" fill="#e8e4dc" font-family="Georgia, serif" font-size="16">Legend</text>
-    <rect x="0" y="20" width="20" height="14" fill="#1a2a40" stroke="#7aa2d4"/>
-    <text x="30" y="32">MCU / digital</text>
-    <rect x="200" y="20" width="20" height="14" fill="#401a2a" stroke="#e080a0"/>
-    <text x="230" y="32">RFID</text>
-    <rect x="320" y="20" width="20" height="14" fill="none" stroke="#e07070" stroke-dasharray="4 3"/>
-    <text x="350" y="32">Antenna keep-out</text>
-    <text x="0" y="70" fill="#999">Bottom layer: solid GND with void under antenna. SWD pads on bottom near USB edge.</text>
-    <text x="0" y="95" fill="#999">Export manufacturing files from KiCad after placing footprints to this floorplan.</text>
+  <g transform="translate(140,720)" font-family="Segoe UI, sans-serif" fill="#ccc" font-size="13">
+    <text x="0" y="0" fill="#e8e4dc" font-family="Georgia, serif" font-size="16">Notes</text>
+    <text x="0" y="30">No RF keep-out on main PCB. Keep metal away from module antenna area.</text>
+    <text x="0" y="55">J3 1x8 under / beside module footprint.</text>
   </g>
 </svg>

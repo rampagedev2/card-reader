@@ -6,7 +6,7 @@
 |-------|---------|
 | Base Material | FR-4 |
 | Layers | 2 |
-| Dimensions | 70 mm × 90 mm |
+| Dimensions | 105 mm × 60 mm (AK-R-160 fit) |
 | Qty | 500 (or panel equivalent) |
 | Thickness | 1.6 mm |
 | Color | Green |

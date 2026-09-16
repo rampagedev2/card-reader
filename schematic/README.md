@@ -7,7 +7,7 @@ Open SVG files in a browser, VS Code, or Inkscape.
 | 01 | `01_system.svg` | Block diagram / system overview |
 | 02 | `02_power.svg` | USB-C, ESD, ferrite, LDO 3.3 V |
 | 03 | `03_mcu.svg` | GD32F407VET6 pin connections |
-| 04 | `04_rfid.svg` | MFRC522 + matching + antenna |
+| 04 | `04_rfid.svg` | RC522 **module** header J3 wiring |
 | 05 | `05_usb_flash_buzzer.svg` | Custom USB MSC, buzzer, LEDs, ECC notes |
 
 Supporting: `netlist.txt`

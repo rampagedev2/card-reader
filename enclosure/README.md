@@ -1,58 +1,48 @@
-# Enclosure — Off-the-shelf (no mold, no logo)
+# Enclosure — SZOMK AK-R-160 (selected)
 
-Custom injection mold **removed**. Use a **stock / shared-mold (公模)** ABS card-reader shell bought blank from Shenzhen suppliers.
+Selected: **[AK-R-160](https://www.chinaenclosure.com/products/SZOMK-Custom-IP54-abs-plastic-junction-box-RFID-enclosure-for-Card-reader-AK-R-160-118-75-22mm.html)**
 
-## Recommended product
+| | |
+|--|--|
+| Maker | SZOMK / Shenzhen OMK Electronics (China) |
+| Part | **AK-R-160** |
+| Size | **118 × 75 × 22 mm** |
+| Material | ABS |
+| Color | Black (custom OK) |
+| Weight | 54 g |
+| Battery | **None** |
+| IP | IP54 |
+| Contact | ivy@szomk.com.cn · https://szokm.en.alibaba.com/ |
 
-| Field | Spec |
-|-------|------|
-| **Primary pick** | **Shiny Enclosure LK-AC05** |
-| Outer size | **119 × 77 × 22 mm** |
-| Material | ABS, black (or white) |
-| Logo | **None** (order blank / no silkscreen) |
-| Fit | Fits ~70×90 mm PCB with margin; thin lid OK for 13.56 MHz |
-| MOQ | 2 pcs (stock) |
-| Lead time | ~3–5 working days after payment |
-| Supplier | [Shiny Enclosure LK-AC05](https://www.shinyenclosure.com/lk-ac05-119-77-22mm-shiny-enclosure-door-access-control-box-ic-card-reader-electronic-enclosure-for-security-system_p581.html) |
-| Contact | bonnie@shinyenclosure.com / WhatsApp +86 13682453603 |
+Also: https://www.chinaenclosure.com/products/Shenzhen-new-product-abs-plastic-access-control-card-reader-118X75X22mm-enclosure-supply-AK-R-160.html
 
-Ask for: **blank shell, no logo, black ABS, with screws, PDF/CAD drawing, optional USB-C cutout**.
+## Features we need
 
-## Alternatives (same market)
+| Feature | How |
+|---------|-----|
+| **Card place** | CNC lid recess **86 × 54 × 0.8 mm** (ISO card) |
+| **LED** | CNC **2 × ø3.0 mm** beside recess |
+| **USB Type-C** | CNC **9.0 × 3.5 mm** on end wall |
+| Logo | Blank / no logo |
 
-| Model | Size (mm) | Source | Notes |
-|-------|-----------|--------|-------|
-| **LK-AC03** | 115 × 77 × 20 | [Shiny](https://www.shinyenclosure.com/lk-ac03-hot-sales-plastic-electrical-enclosure-boxes-door-access-control-system-rfid-reader-enclosure-115x77x20mm_p1107.html) | Slightly thinner; good RFID form |
-| **LK-AC01** | 119 × 54 × 23 | Shiny | Narrower — may need PCB shrink to ~50 mm width |
-| **HF-K-208** | 123 × 99 × 26 | [Hongfa Shunda](http://m.hfsdkt.com/menjindukawaike/34-2250.html) | Larger; easier PCB fit |
-| Generic DIY box | 100 × 60 × 25 | AliExpress (~$1.5–2.5) | Cheapest; less “reader-like” look |
+Height **22 mm** fits RC522 module better than AK-R-107 (17 mm). Lid fits ISO card on top.
 
-Hongfa / 1688 “门禁读卡器外壳” listings often quote about **¥10/set (~$1.40) at 500–999**, **¥15 (~$2.10) at 100–499**, blank ABS, no logo unless you pay for print.
+## PCB fit
 
-## Price used in BOM (@500)
+Target PCB ≈ **110 × 65 mm** max (confirm with seller CAD). Current design should be sized to this shell.
+
+## Order wording
+
+> SZOMK **AK-R-160**, qty 500, black, blank no logo, **no battery**.  
+> CNC: lid card recess **86×54×0.8 mm**; **2× LED ø3.0 mm**; Type-C **9.0×3.5 mm**.  
+> Send CAD/PDF and 1–3 sample before mass run.
+
+## Cost (est. @500)
 
 | Item | USD |
 |------|-----|
-| Blank ABS shell (LK-AC05 class) | **$1.40** |
-| USB-C + LED hole machining (optional CNC/drill) | **$0.25** |
-| Screws (if not included) | **$0.10** |
-| **Enclosure total** | **~$1.75** |
-| ~~Custom mold~~ | **$0** |
+| AK-R-160 blank | ~1.20 |
+| Card recess + Type-C + 2× LED CNC | ~0.50 |
+| **Enclosure** | **~$1.70** |
 
-## Fit notes for our PCB
-
-1. Resize PCB to **~65 × 85 mm** (or confirm internal boss spacing from supplier CAD) before Gerbers.  
-2. Place USB-C on the end that matches the stock cutout — or pay for one USB-C opening.  
-3. Keep antenna under the flat lid area; avoid metal stickers.  
-4. No brand logo on case (per your request).
-
-## What changed vs previous “Slate” custom case
-
-| | Custom mold | Stock shell |
-|--|-------------|-------------|
-| NRE | ~$2,500 | **$0** |
-| Unit shell | ~$1.50 + $5 amort. | **~$1.75 all-in** |
-| Lead time | 4–6 weeks tooling | **Days** |
-| Look | Unique | Standard access-control style (still clean blank) |
-
-OpenSCAD `card_reader_case.scad` is kept only as a mechanical reference; **do not tool it**.
+Parts+PCB ~$6.60 → **~$8.30 / unit**, **~$4,150 / 500**.
