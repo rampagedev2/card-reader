@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720">
+  <rect width="1100" height="720" fill="#f7f5f0"/>
+  <text x="40" y="42" font-family="Georgia, serif" font-size="22" fill="#1a1a1a">Sheet 01 - System Overview</text>
+  <text x="40" y="68" font-family="Segoe UI, sans-serif" font-size="12" fill="#555">Card Reader | GD32F407VET6 + MFRC522 | Custom USB MSC (no SPI NOR) | Rev B</text>
+  <line x1="40" y1="82" x2="1060" y2="82" stroke="#ccc"/>
+
+  <rect x="40" y="140" width="120" height="80" rx="6" fill="#fff" stroke="#2c5f4a" stroke-width="2"/>
+  <text x="100" y="175" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c5f4a">USB-C</text>
+  <text x="100" y="195" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">5V / Data</text>
+
+  <rect x="220" y="140" width="140" height="80" rx="6" fill="#fff" stroke="#8a5a2b" stroke-width="2"/>
+  <text x="290" y="170" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#8a5a2b">Power</text>
+  <text x="290" y="190" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">ESD + LDO 3.3V</text>
+  <text x="290" y="206" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">AP2112K</text>
+
+  <rect x="430" y="110" width="240" height="150" rx="8" fill="#fff" stroke="#1a3a5c" stroke-width="2.5"/>
+  <text x="550" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#1a3a5c">GD32F407VET6</text>
+  <text x="550" y="175" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#666">Cortex-M4 | 168 MHz</text>
+  <text x="550" y="195" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">USB | SPI1 | TIM</text>
+  <text x="550" y="215" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">Custom MSC + ECC</text>
+  <text x="550" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">(internal Flash / virtual)</text>
+
+  <rect x="740" y="120" width="160" height="100" rx="6" fill="#fff" stroke="#5c1a3a" stroke-width="2"/>
+  <text x="820" y="155" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#5c1a3a">MFRC522</text>
+  <text x="820" y="175" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">SPI1 + Antenna</text>
+  <text x="820" y="195" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">13.56 MHz</text>
+
+  <rect x="430" y="300" width="120" height="70" rx="6" fill="#fff" stroke="#5c4a1a" stroke-width="2"/>
+  <text x="490" y="330" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#5c4a1a">Buzzer</text>
+  <text x="490" y="350" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">PWM | MOSFET</text>
+
+  <rect x="580" y="300" width="120" height="70" rx="6" fill="#fff" stroke="#1a5c3a" stroke-width="2"/>
+  <text x="640" y="330" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#1a5c3a">LEDs</text>
+  <text x="640" y="350" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">Status | RF</text>
+
+  <rect x="40" y="300" width="140" height="70" rx="6" fill="#eef2ef" stroke="#2c5f4a" stroke-width="1.5"/>
+  <text x="110" y="330" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c5f4a">Host PC</text>
+  <text x="110" y="350" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">Custom MSC</text>
+
+  <line x1="160" y1="180" x2="220" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="360" y1="180" x2="430" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="670" y1="160" x2="740" y2="160" stroke="#333" stroke-width="1.5"/>
+  <line x1="550" y1="260" x2="550" y2="300" stroke="#333" stroke-width="1.5"/>
+  <line x1="600" y1="260" x2="640" y2="300" stroke="#333" stroke-width="1.5"/>
+  <line x1="100" y1="220" x2="100" y2="300" stroke="#333" stroke-width="1.5"/>
+  <path d="M100 260 H430" stroke="#333" stroke-width="1.5" fill="none"/>
+  <text x="250" y="252" font-family="Segoe UI, sans-serif" font-size="10" fill="#888">USB DP/DM</text>
+
+  <rect x="40" y="420" width="1020" height="250" rx="8" fill="#fff" stroke="#ddd"/>
+  <text x="60" y="455" font-family="Georgia, serif" font-size="16" fill="#1a1a1a">Functional flow</text>
+  <text x="60" y="485" font-family="Segoe UI, sans-serif" font-size="13" fill="#333">1. Card presented over antenna - MFRC522 IRQ - MCU reads UID via SPI1</text>
+  <text x="60" y="510" font-family="Segoe UI, sans-serif" font-size="13" fill="#333">2. Buzzer chirp + blue LED pulse; green LED steady when USB enumerated</text>
+  <text x="60" y="535" font-family="Segoe UI, sans-serif" font-size="13" fill="#333">3. MCU computes ECC signature; updates custom MSC-visible files (no external flash)</text>
+  <text x="60" y="560" font-family="Segoe UI, sans-serif" font-size="13" fill="#333">4. Host PC mounts USB MSC and reads UID.TXT / UID.SIG from the virtual volume</text>
+  <text x="60" y="595" font-family="Segoe UI, sans-serif" font-size="13" fill="#555">Related sheets: 02 Power | 03 MCU | 04 RFID | 05 USB Buzzer</text>
+  <text x="60" y="630" font-family="Segoe UI, sans-serif" font-size="12" fill="#888">W25Q128 removed in Rev B - custom USB Mass Storage uses MCU memory only.</text>
+</svg>

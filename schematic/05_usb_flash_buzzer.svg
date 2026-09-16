@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720">
+  <rect width="1100" height="720" fill="#f7f5f0"/>
+  <text x="40" y="42" font-family="Georgia, serif" font-size="22" fill="#1a1a1a">Sheet 05 - Custom USB MSC, Buzzer, LEDs</text>
+  <text x="40" y="68" font-family="Segoe UI, sans-serif" font-size="12" fill="#555">No W25Q128 - MSC implemented in firmware on GD32F407</text>
+  <line x1="40" y1="82" x2="1060" y2="82" stroke="#ccc"/>
+
+  <rect x="60" y="110" width="340" height="240" rx="8" fill="#fff" stroke="#1a4a5c" stroke-width="2"/>
+  <text x="230" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#1a4a5c">Custom USB MSC</text>
+  <text x="80" y="185" font-family="Segoe UI, sans-serif" font-size="13" fill="#333">USB FS: PA11 (DM) / PA12 (DP)</text>
+  <text x="80" y="215" font-family="Segoe UI, sans-serif" font-size="13" fill="#333">Storage backend options:</text>
+  <text x="80" y="245" font-family="Consolas, monospace" font-size="12">A) Flash FAT image (64-128 KB)</text>
+  <text x="80" y="270" font-family="Consolas, monospace" font-size="12">B) RAM disk (volatile)</text>
+  <text x="80" y="295" font-family="Consolas, monospace" font-size="12">C) Virtual SCSI on-the-fly</text>
+  <text x="80" y="325" font-family="Segoe UI, sans-serif" font-size="12" fill="#666">No external SPI NOR chip</text>
+
+  <rect x="440" y="110" width="300" height="240" rx="8" fill="#fff" stroke="#5c4a1a" stroke-width="2"/>
+  <text x="590" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#5c4a1a">Buzzer drive</text>
+  <text x="470" y="195" font-family="Consolas, monospace" font-size="12">PB0 (PWM) to R 100ohm to Q1</text>
+  <text x="470" y="225" font-family="Consolas, monospace" font-size="12">Q1 AO3400 drain to BZ1-</text>
+  <text x="470" y="255" font-family="Consolas, monospace" font-size="12">BZ1+ to VBUS (5V) or 3V3</text>
+  <text x="470" y="285" font-family="Consolas, monospace" font-size="12">D1 across BZ1 (cathode +)</text>
+  <text x="470" y="320" font-family="Segoe UI, sans-serif" font-size="12" fill="#666">Tone: 2.7 kHz, 80-120 ms</text>
+
+  <rect x="780" y="110" width="260" height="240" rx="8" fill="#fff" stroke="#1a5c3a" stroke-width="2"/>
+  <text x="910" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#1a5c3a">Indicators</text>
+  <text x="810" y="200" font-family="Consolas, monospace" font-size="12">PB1 to 1k to LED1 GRN</text>
+  <text x="810" y="230" font-family="Consolas, monospace" font-size="12">PB2 to 1k to LED2 BLU</text>
+  <text x="810" y="270" font-family="Segoe UI, sans-serif" font-size="12" fill="#666">Light pipes in enclosure</text>
+
+  <rect x="60" y="390" width="980" height="280" rx="8" fill="#fff" stroke="#ddd"/>
+  <text x="80" y="430" font-family="Georgia, serif" font-size="15">Firmware notes</text>
+  <text x="80" y="465" font-family="Segoe UI, sans-serif" font-size="13">- USB device stack + custom MSC callbacks (TinyUSB or GD32 USBFS lib).</text>
+  <text x="80" y="495" font-family="Segoe UI, sans-serif" font-size="13">- On card read: update virtual files; SHA-256 then ECDSA P-256 - expose UID.SIG.</text>
+  <text x="80" y="525" font-family="Segoe UI, sans-serif" font-size="13">- Keep app code + MSC image + ECC key in 512 KB Flash without overlapping.</text>
+  <text x="80" y="555" font-family="Segoe UI, sans-serif" font-size="13">- Store private key with readout protection (RDP level 1+).</text>
+  <text x="80" y="595" font-family="Segoe UI, sans-serif" font-size="13" fill="#555">USB lines from Sheet 02 ESD to PA11/PA12. Optional 22 ohm series near MCU.</text>
+  <text x="80" y="625" font-family="Segoe UI, sans-serif" font-size="13" fill="#555">BOM savings vs Rev A: removed W25Q128 (~$1.85 @ qty 500).</text>
+</svg>

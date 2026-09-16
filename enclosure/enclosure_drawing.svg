@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
+  <rect width="1000" height="720" fill="#f4f2ed"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="22" fill="#1a1a1a">Enclosure - Stock blank (no mold)</text>
+  <text x="40" y="65" font-family="Segoe UI, sans-serif" font-size="12" fill="#666">Recommended: Shiny LK-AC05 | 119 x 77 x 22 mm | ABS black | no logo</text>
+
+  <g transform="translate(80,120)">
+    <rect x="0" y="0" width="300" height="195" rx="10" fill="#2a2c2e" stroke="#111" stroke-width="2"/>
+    <rect x="40" y="40" width="220" height="120" rx="4" fill="#323538"/>
+    <text x="150" y="105" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#9aa">TAP ZONE</text>
+    <circle cx="50" cy="25" r="4" fill="#3d7a55"/>
+    <circle cx="70" cy="25" r="4" fill="#3a6a9a"/>
+    <text x="150" y="185" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#888">TOP ~119 x 77 mm</text>
+  </g>
+
+  <g transform="translate(450,150)">
+    <rect x="0" y="40" width="300" height="55" rx="8" fill="#2a2c2e" stroke="#111" stroke-width="2"/>
+    <rect x="290" y="55" width="12" height="18" rx="2" fill="#111"/>
+    <text x="150" y="130" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#888">SIDE ~22 mm | USB-C cutout</text>
+  </g>
+
+  <g transform="translate(80,380)" font-family="Segoe UI, sans-serif" font-size="13" fill="#333">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="16">Market buy (blank)</text>
+    <text x="0" y="30">- Shiny Enclosure LK-AC05 (or LK-AC03 / Hongfa HF series)</text>
+    <text x="0" y="55">- Order: blank ABS, no logo, with screws</text>
+    <text x="0" y="80">- ~$1.40 shell + ~$0.25 USB/LED machining @ qty 500</text>
+    <text x="0" y="105">- Mold NRE: $0 | Lead time: days, not weeks</text>
+    <text x="0" y="140" fill="#555">Resize PCB to match supplier CAD (target ~65 x 85 mm)</text>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="820" viewBox="0 0 1100 820">
+  <rect width="1100" height="820" fill="#f7f5f0"/>
+  <text x="40" y="42" font-family="Georgia, serif" font-size="22" fill="#1a1a1a">Sheet 03 - MCU GD32F407VET6</text>
+  <text x="40" y="68" font-family="Segoe UI, sans-serif" font-size="12" fill="#555">Minimal pinout | No SPI2 / W25Q128 | See docs/pin-map.md</text>
+  <line x1="40" y1="82" x2="1060" y2="82" stroke="#ccc"/>
+
+  <rect x="320" y="120" width="420" height="480" rx="10" fill="#fff" stroke="#1a3a5c" stroke-width="2.5"/>
+  <text x="530" y="160" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#1a3a5c">U1 GD32F407VET6</text>
+  <text x="530" y="185" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#666">LQFP-100</text>
+
+  <g font-family="Consolas, monospace" font-size="12" fill="#222">
+    <text x="300" y="230" text-anchor="end">3V3 - VDD</text>
+    <text x="300" y="255" text-anchor="end">GND - VSS</text>
+    <text x="300" y="280" text-anchor="end">3V3 - VDDA</text>
+    <text x="300" y="305" text-anchor="end">GND - VSSA</text>
+    <text x="300" y="340" text-anchor="end">NRST -</text>
+    <text x="300" y="365" text-anchor="end">BOOT0 -</text>
+    <text x="300" y="400" text-anchor="end">OSC_IN -</text>
+    <text x="300" y="425" text-anchor="end">OSC_OUT -</text>
+    <text x="300" y="470" text-anchor="end">PA11 USB_DM -</text>
+    <text x="300" y="495" text-anchor="end">PA12 USB_DP -</text>
+    <text x="300" y="530" text-anchor="end">PA13 SWDIO -</text>
+    <text x="300" y="555" text-anchor="end">PA14 SWCLK -</text>
+  </g>
+
+  <g font-family="Consolas, monospace" font-size="12" fill="#222">
+    <text x="760" y="230">- PA5 SPI1_SCK</text>
+    <text x="760" y="255">- PA6 SPI1_MISO</text>
+    <text x="760" y="280">- PA7 SPI1_MOSI</text>
+    <text x="760" y="305">- PA4 SPI1_NSS</text>
+    <text x="760" y="340">- PC4 RFID_RST</text>
+    <text x="760" y="365">- PC5 RFID_IRQ</text>
+    <text x="760" y="420">- PB0 BUZZER</text>
+    <text x="760" y="445">- PB1 LED_STAT</text>
+    <text x="760" y="470">- PB2 LED_RF</text>
+    <text x="760" y="520" fill="#888">PB12-15 unused</text>
+    <text x="760" y="540" fill="#888">(no SPI NOR)</text>
+  </g>
+
+  <rect x="80" y="380" width="140" height="90" rx="6" fill="#fff" stroke="#555"/>
+  <text x="150" y="415" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13">X1 8 MHz</text>
+  <text x="150" y="440" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">C4,C5 22 pF</text>
+
+  <rect x="80" y="200" width="140" height="70" rx="6" fill="#fff" stroke="#555"/>
+  <text x="150" y="230" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12">R_BOOT 10k</text>
+  <text x="150" y="250" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">BOOT0 to GND</text>
+
+  <rect x="80" y="290" width="140" height="70" rx="6" fill="#fff" stroke="#555"/>
+  <text x="150" y="320" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12">R_RST 10k</text>
+  <text x="150" y="340" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">C_RST 100n</text>
+
+  <rect x="50" y="650" width="1000" height="120" rx="8" fill="#fff" stroke="#ddd"/>
+  <text x="70" y="685" font-family="Segoe UI, sans-serif" font-size="13">Programming: SWD at 3.3 V. Custom USB MSC uses internal Flash/RAM - no external memory chip.</text>
+  <text x="70" y="715" font-family="Segoe UI, sans-serif" font-size="13">Unused pins: configure as analog input in firmware to reduce power / noise.</text>
+  <text x="70" y="745" font-family="Segoe UI, sans-serif" font-size="13" fill="#555">Reserve last Flash pages for MSC volume image and ECC key storage.</text>
+</svg>

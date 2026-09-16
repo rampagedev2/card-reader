@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780">
+  <rect width="1100" height="780" fill="#f7f5f0"/>
+  <text x="40" y="42" font-family="Georgia, serif" font-size="22" fill="#1a1a1a">Sheet 02 - Power and USB Connector</text>
+  <text x="40" y="68" font-family="Segoe UI, sans-serif" font-size="12" fill="#555">VBUS 5V - ESD - Ferrite - LDO - 3V3</text>
+  <line x1="40" y1="82" x2="1060" y2="82" stroke="#ccc"/>
+
+  <rect x="50" y="120" width="160" height="200" rx="8" fill="#fff" stroke="#2c5f4a" stroke-width="2"/>
+  <text x="130" y="150" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c5f4a">J1 USB-C</text>
+  <text x="70" y="180" font-family="Consolas, monospace" font-size="12" fill="#333">A4/B9  VBUS</text>
+  <text x="70" y="200" font-family="Consolas, monospace" font-size="12" fill="#333">A6/B6  D+</text>
+  <text x="70" y="220" font-family="Consolas, monospace" font-size="12" fill="#333">A7/B7  D-</text>
+  <text x="70" y="240" font-family="Consolas, monospace" font-size="12" fill="#333">A5     CC1</text>
+  <text x="70" y="260" font-family="Consolas, monospace" font-size="12" fill="#333">B5     CC2</text>
+  <text x="70" y="280" font-family="Consolas, monospace" font-size="12" fill="#333">A1..GND</text>
+  <text x="70" y="300" font-family="Consolas, monospace" font-size="12" fill="#333">SHELL to GND</text>
+
+  <text x="250" y="190" font-family="Segoe UI, sans-serif" font-size="11" fill="#888">R1,R2 = 5.1k</text>
+  <line x1="210" y1="175" x2="280" y2="175" stroke="#333"/>
+  <rect x="280" y="155" width="70" height="40" fill="#fff" stroke="#333"/>
+  <text x="315" y="180" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11">CC</text>
+  <line x1="315" y1="195" x2="315" y2="230" stroke="#333"/>
+  <text x="325" y="225" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">GND</text>
+
+  <rect x="380" y="140" width="120" height="100" rx="6" fill="#fff" stroke="#8a2b2b" stroke-width="2"/>
+  <text x="440" y="175" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#8a2b2b">U5 ESD</text>
+  <text x="440" y="198" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">USBLC6-2</text>
+  <text x="440" y="218" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">D+ D- VBUS</text>
+
+  <rect x="540" y="140" width="130" height="100" rx="6" fill="#fff" stroke="#555" stroke-width="2"/>
+  <text x="605" y="175" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13">L1 Ferrite</text>
+  <text x="605" y="198" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">600R @100MHz</text>
+  <text x="605" y="218" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">C1 10uF VBUS</text>
+
+  <rect x="710" y="130" width="160" height="120" rx="6" fill="#fff" stroke="#8a5a2b" stroke-width="2"/>
+  <text x="790" y="165" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#8a5a2b">U4 AP2112K-3.3</text>
+  <text x="790" y="190" text-anchor="middle" font-family="Consolas, monospace" font-size="12">IN from 5V  EN from 5V</text>
+  <text x="790" y="210" text-anchor="middle" font-family="Consolas, monospace" font-size="12">OUT to 3V3</text>
+  <text x="790" y="230" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">C2 10uF | C3 100nF</text>
+
+  <rect x="50" y="380" width="1000" height="140" rx="8" fill="#fff" stroke="#ddd"/>
+  <text x="70" y="415" font-family="Georgia, serif" font-size="15">Netlist (power)</text>
+  <text x="70" y="445" font-family="Consolas, monospace" font-size="12" fill="#333">VBUS  - J1.VBUS - L1 - U4.IN - U5.VBUS - BZ1+</text>
+  <text x="70" y="470" font-family="Consolas, monospace" font-size="12" fill="#333">3V3   - U4.OUT - U1.VDD - U2.VDD - U3.VCC - LEDs - VDDA</text>
+  <text x="70" y="495" font-family="Consolas, monospace" font-size="12" fill="#333">GND   - star to USB connector shell + RF GND pour under antenna</text>
+
+  <rect x="50" y="550" width="1000" height="180" rx="8" fill="#fff" stroke="#ddd"/>
+  <text x="70" y="585" font-family="Georgia, serif" font-size="15">Decoupling checklist</text>
+  <text x="70" y="615" font-family="Segoe UI, sans-serif" font-size="13">- Every VDD pin: 100 nF within 3 mm of pin</text>
+  <text x="70" y="640" font-family="Segoe UI, sans-serif" font-size="13">- Bulk 10 uF near LDO output and near MCU</text>
+  <text x="70" y="665" font-family="Segoe UI, sans-serif" font-size="13">- VDDA: 10 ohm / ferrite + 1 uF + 100 nF to VSSA</text>
+  <text x="70" y="690" font-family="Segoe UI, sans-serif" font-size="13">- USB DP/DM: ESD before series 0-22 ohm (optional) into MCU</text>
+</svg>

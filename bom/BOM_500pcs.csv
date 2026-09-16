@@ -1,0 +1,39 @@
+Ref,Qty,Value,Package,Manufacturer,LCSC/MPN,Unit_USD_500,Ext_USD_500,Category,Notes
+U1,1,GD32F407VET6,LQFP-100,GigaDevice,C108421,2.90,2.90,MCU,JLCPCB/LCSC ~540pc tier
+U2,1,MFRC522,QFN-32-EP,JSMSEMI/NXP-compat,C2760772,0.74,0.74,RFID,RC522 compatible
+U4,1,AP2112K-3.3TRG1,SOT-23-5,Diodes/BCI,C51118,0.08,0.08,Power,600mA LDO
+U5,1,USBLC6-2SC6,SOT-23-6,ST/compat,C2827693,0.12,0.12,ESD,USB D+/D-
+Q1,1,AO3400,SOT-23,AOS/compat,C20917,0.03,0.03,Discrete,Buzzer drive
+X1,1,8MHz 20ppm,HC-49S/SMD3225,generic,C9002,0.05,0.05,Clock,CL=20pF
+Y1,1,27.12MHz (opt),SMD3225,generic,—,0.00,0.00,Clock,MFRC522 uses onboard osc typically
+BZ1,1,Passive piezo 12mm,TH/SMD,generic,C96590,0.15,0.15,Audio,3.3-5V
+J1,1,USB-C 16P SMD,TYPE-C-31-M-12,Korean/CN,C165948,0.18,0.18,Connector,CC 5.1k both
+J2,1,SWD 1x4 2.54,Pin header,generic,C124378,0.05,0.05,Debug,DNP for retail
+LED1,1,Green 0603,LED-0603,generic,C2286,0.02,0.02,Opto,Status
+LED2,1,Blue 0603,LED-0603,generic,C2287,0.02,0.02,Opto,RF activity
+D1,1,1N4148W,SOD-123,generic,C2128,0.01,0.01,Discrete,Buzzer diode
+L1,1,Ferrite 600R@100MHz,0603,generic,C107148,0.02,0.02,EMI,USB VBUS
+L2,1,Antenna matching ~1uH,0603 RF,generic,—,0.05,0.05,RF,Tune per antenna
+C_RF,3,RF matching 15-68pF NP0,0402,generic,—,0.03,0.09,RF,Antenna network
+C_BULK,4,10uF 16V X5R,0805,generic,C15850,0.03,0.12,Passive,3V3/VBUS
+C_DEC,18,100nF 50V X7R,0402,generic,C1525,0.005,0.09,Passive,Decoupling
+C_XTAL,2,22pF NP0,0402,generic,C1555,0.01,0.02,Passive,HSE load
+R_CC,2,5.1k 1%,0402,generic,C25905,0.005,0.01,Passive,USB-C CC1/CC2
+R_LED,2,1k 5%,0402,generic,C11702,0.004,0.008,Passive,LED series
+R_BOOT,1,10k 5%,0402,generic,C25744,0.004,0.004,Passive,BOOT0
+R_RST,1,10k 5%,0402,generic,C25744,0.004,0.004,Passive,NRST
+R_BUZ,1,100R 5%,0402,generic,C25076,0.004,0.004,Passive,Gate/series
+ANT1,1,PCB loop antenna,PCB copper,—,—,0.00,0.00,RF,On board ~40x40mm
+MISC_PASS,1,Resistor/cap kit remainder,0402/0603,generic,—,0.35,0.35,Passive,Pullups SPI1 etc
+PCB1,1,PCB ~65x85mm 2L HASL,FR-4 1.6mm,JLCPCB,—,0.35,0.35,Fab,Fit stock shell
+ASM1,1,SMT assembly amortized,PCBA,JLCPCB,—,1.15,1.15,Fab,Setup+stencil+joints
+,,,,,,,ELECTRONICS_SUBTOTAL,,8.00,8.00,,Custom USB MSC no SPI NOR
+ENC1,1,Stock ABS shell blank no logo,LK-AC05 class,Shiny/1688,—,1.40,1.40,Mech,119x77x22mm RFID housing
+ENC_CNC,1,USB-C + LED hole machining,Labor,CN,—,0.25,0.25,Mech,Optional if no stock cutout
+SCREW,1,Screws (if not in kit),Steel,CN,—,0.10,0.10,Mech,
+PKG,1,Box + foam + cable bag,Paper,CN,—,0.40,0.40,Pack,
+TEST,1,ICT/functional + flash FW,Labor,CN,—,0.60,0.60,Labor,
+SCRAP,1,Yield allowance 2%,—,—,0.20,0.20,Other,
+,,,,,,,UNIT_TOTAL_EST,,10.95,10.95,,No mold NRE
+,,,,,,,BATCH_500_TOTAL,,5475,5475,,
+,,,,,,,MOLD_NRE,,0,0,,Not purchased

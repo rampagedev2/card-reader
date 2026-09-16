@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="800" viewBox="0 0 1100 800">
+  <rect width="1100" height="800" fill="#f7f5f0"/>
+  <text x="40" y="42" font-family="Georgia, serif" font-size="22" fill="#1a1a1a">Sheet 04 - RFID RC522 (MFRC522 + Antenna)</text>
+  <text x="40" y="68" font-family="Segoe UI, sans-serif" font-size="12" fill="#555">Production: chip on PCB (not plug-in module) | Compatible with RC522 firmware</text>
+  <line x1="40" y1="82" x2="1060" y2="82" stroke="#ccc"/>
+
+  <rect x="80" y="120" width="280" height="320" rx="8" fill="#fff" stroke="#5c1a3a" stroke-width="2"/>
+  <text x="220" y="155" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#5c1a3a">U2 MFRC522</text>
+  <text x="220" y="178" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">QFN-32 EP</text>
+  <g font-family="Consolas, monospace" font-size="12" fill="#222">
+    <text x="100" y="215">TVDD / AVDD / DVDD to 3V3</text>
+    <text x="100" y="240">TVSS / AVSS / DVSS to GND</text>
+    <text x="100" y="275">SCK  from PA5</text>
+    <text x="100" y="300">MISO to PA6</text>
+    <text x="100" y="325">MOSI from PA7</text>
+    <text x="100" y="350">NSS  from PA4</text>
+    <text x="100" y="385">RST  from PC4</text>
+    <text x="100" y="410">IRQ  to PC5</text>
+  </g>
+
+  <rect x="420" y="140" width="220" height="160" rx="6" fill="#fff" stroke="#8a5a2b" stroke-width="2"/>
+  <text x="530" y="175" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#8a5a2b">Matching network</text>
+  <text x="440" y="210" font-family="Consolas, monospace" font-size="12">TX1/TX2 to EMC filter</text>
+  <text x="440" y="235" font-family="Consolas, monospace" font-size="12">to series L (L2)</text>
+  <text x="440" y="260" font-family="Consolas, monospace" font-size="12">to parallel C (NP0)</text>
+  <text x="440" y="285" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">Copy NXP AN1445 values</text>
+
+  <rect x="700" y="120" width="320" height="280" rx="8" fill="#fff" stroke="#1a3a5c" stroke-width="2"/>
+  <text x="860" y="155" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#1a3a5c">ANT1 PCB loop</text>
+  <rect x="760" y="180" width="200" height="180" fill="none" stroke="#5c1a3a" stroke-width="3"/>
+  <rect x="780" y="200" width="160" height="140" fill="none" stroke="#5c1a3a" stroke-width="3"/>
+  <rect x="800" y="220" width="120" height="100" fill="none" stroke="#5c1a3a" stroke-width="3"/>
+  <text x="860" y="385" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#666">~40 x 40 mm | 3-4 turns</text>
+
+  <rect x="80" y="480" width="940" height="260" rx="8" fill="#fff" stroke="#ddd"/>
+  <text x="100" y="520" font-family="Georgia, serif" font-size="15">Layout rules (critical)</text>
+  <text x="100" y="555" font-family="Segoe UI, sans-serif" font-size="13">1. Keep antenna on top layer; void copper under antenna on all layers (keep-out).</text>
+  <text x="100" y="580" font-family="Segoe UI, sans-serif" font-size="13">2. Place MFRC522 within 15 mm of antenna feed; short TX traces, equal length.</text>
+  <text x="100" y="605" font-family="Segoe UI, sans-serif" font-size="13">3. Solid GND pour elsewhere; stitch vias around RF keep-out boundary.</text>
+  <text x="100" y="630" font-family="Segoe UI, sans-serif" font-size="13">4. No switching regulators under antenna; LDO only.</text>
+  <text x="100" y="655" font-family="Segoe UI, sans-serif" font-size="13">5. Enclosure top over antenna max 1.5 mm ABS; no metal paint / foil logos in RF zone.</text>
+  <text x="100" y="690" font-family="Segoe UI, sans-serif" font-size="13">Module option: if using ready RC522 module, connect SPI + 3V3 + GND via 8-pin header and omit U2/ANT1.</text>
+</svg>
